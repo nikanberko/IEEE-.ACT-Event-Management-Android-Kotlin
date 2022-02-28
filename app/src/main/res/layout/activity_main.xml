@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvSignOut"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/ic_outline_logout_24"
+        android:backgroundTint="@color/orangeDotAct"
+        android:elevation="7dp"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvUpperMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/square_corner"
+        android:elevation="6dp"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvRefreshIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/ic_round_refresh_24"
+        android:backgroundTint="@color/orangeDotAct"
+        android:elevation="7dp"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvEvents"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUpperMenu"
+        tools:listitem="@layout/event_item" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabBecomeMember"
+        style="@style/Theme.DotAct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/white"
+        android:clickable="true"
+        app:backgroundTint="#FF6E40"
+        app:borderWidth="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fabMore"
+        app:rippleColor="#FF6E40"
+        app:srcCompat="@drawable/ic_baseline_how_to_reg_24" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabUploadEvent"
+        style="@style/Theme.DotAct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/white"
+        android:clickable="true"
+        app:backgroundTint="#FF6E40"
+        app:borderWidth="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fabBecomeMember"
+        app:rippleColor="#FF6E40"
+        app:srcCompat="@drawable/ic_outline_file_upload_24" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabSignOut"
+        style="@style/Theme.DotAct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/white"
+        android:clickable="true"
+        app:backgroundTint="#FF6E40"
+        app:borderWidth="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fabUploadEvent"
+        app:rippleColor="#FF6E40"
+        app:srcCompat="@drawable/ic_outline_logout_24" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/white"
+        android:clickable="true"
+        app:backgroundTint="#FF6E40"
+        app:borderWidth="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:rippleColor="#FF6E40"
+        app:srcCompat="@drawable/ic_baseline_more_horiz_24" />
+
+    <TextView
+        android:id="@+id/tvLogoUpper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="7dp"
+        android:fontFamily="@font/roboto_thin"
+        android:text=".Act"
+        android:textColor="#FF6E40"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvUpperMenu"
+        app:layout_constraintStart_toStartOf="@+id/tvUpperMenu"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

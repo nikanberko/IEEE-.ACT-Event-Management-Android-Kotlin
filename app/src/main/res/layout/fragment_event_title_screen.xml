@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".EventTitleScreenFragment">
+
+    <Button
+        android:id="@+id/btnNextUpload"
+        android:layout_width="130dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#FF6E40"
+        android:fontFamily="@font/roboto_light"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:cornerRadius="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEventTitleUpload"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btnExitUpload"
+        android:layout_width="130dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/roboto_light"
+        android:text="Exit"
+        android:textAllCaps="false"
+        android:textColor="@color/orangeDotAct"
+        android:textSize="18sp"
+        app:cornerRadius="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEventTitleUpload"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/etEventTitleUpload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:autofillHints=""
+        android:fontFamily="@font/roboto_condensed_bold_italic"
+        android:hint="Your event title"
+        android:inputType="textMultiLine|text"
+        android:soundEffectsEnabled="true"
+        android:textAlignment="center"
+        android:textColor="#FF6E40"
+        android:textColorHighlight="#FF6E40"
+        android:textColorHint="@color/orangeDotAct"
+        android:textColorLink="#FF6E40"
+        android:textSize="25sp"
+        android:theme="@style/EditTextTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvEventTitleHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_black"
+        android:text="Hi, let's upload your event!"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/etEventTitleUpload"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.456" />
+
+    <TextView
+        android:id="@+id/tvEventTitleSubHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/roboto_light_italic"
+        android:text="First, choose a title"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toTopOf="@+id/etEventTitleUpload"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEventTitleHeader"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "398898770392",
+    "project_id": "dotact-a9d8c",
+    "storage_bucket": "dotact-a9d8c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:398898770392:android:7b99d4561e716ea0b482ad",
+        "android_client_info": {
+          "package_name": "com.example.dotact"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "398898770392-fq7hdrlk8eevkv3npebv0t0l5pjvvdoc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFNvv2AiAbJOjOUgRRL7eGKnlXLJoNYtQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "398898770392-fq7hdrlk8eevkv3npebv0t0l5pjvvdoc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

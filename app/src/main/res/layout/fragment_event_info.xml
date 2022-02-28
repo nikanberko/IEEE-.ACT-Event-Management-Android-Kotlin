@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/eventInfoFragment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@drawable/square_corner"
+    android:backgroundTint="@color/white"
+    tools:context=".EventInfoFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/square_corner">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <ImageView
+            android:id="@+id/ivFragTitleImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:foreground="@drawable/fg_event_photo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:src="@tools:sample/avatars"
+            android:contentDescription="@string/todoInfo" />
+
+        <TextView
+            android:id="@+id/tvFragTitle"
+            android:layout_width="406dp"
+            android:layout_height="wrap_content"
+            android:elevation="6dp"
+            android:fontFamily="@font/roboto_condensed_bold_italic"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/titleInfo"
+            android:textAlignment="center"
+            android:textColor="@color/orangeDotAct"
+            android:textSize="26sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivFragTitleImage" />
+
+        <TextView
+            android:id="@+id/tvSpace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/roboto_italic"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="5dp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivFragTitleImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tvMembersOnly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/roboto_condensed_bold_italic"
+            android:paddingBottom="5dp"
+            android:text="@string/members_only_info"
+            android:textAlignment="center"
+            android:textColor="@color/orangeDotAct"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvFragTitle4" />
+
+        <TextView
+            android:id="@+id/tvFragTitle4"
+            android:layout_width="406dp"
+            android:layout_height="wrap_content"
+            android:elevation="6dp"
+            android:fontFamily="@font/roboto_italic"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="5dp"
+            android:text="@string/organizer"
+            android:textAlignment="center"
+            android:textColor="@color/normalEditText"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvFragTitle" />
+
+        <WebView
+            android:id="@+id/wbApply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintTop_toBottomOf="@+id/btnShowMap" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/curved_corner_square"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSpace" />
+
+        <TextView
+            android:id="@+id/tvFragDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/square_corner"
+            android:elevation="4dp"
+            android:fontFamily="@font/roboto_light"
+            android:padding="10dp"
+            android:text="@string/dateInfo"
+            android:textColor="#FF6E40"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvFragLocation" />
+
+        <TextView
+            android:id="@+id/tvFragTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/square_corner_orange"
+            android:elevation="4dp"
+            android:fontFamily="@font/roboto_light"
+            android:padding="10dp"
+            android:text="@string/time_info"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/tvFragLocation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvMembersOnly"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tvFragLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/square_corner"
+            android:elevation="4dp"
+            android:fontFamily="@font/roboto_light"
+            android:padding="10dp"
+            android:text="@string/location_info"
+            android:textColor="#FF6E40"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvFragTime" />
+
+        <TextView
+            android:id="@+id/tvMoreDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="3dp"
+            android:fontFamily="@font/roboto_light_italic"
+            android:hapticFeedbackEnabled="true"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:text="@string/read_more_info"
+            android:textAlignment="viewEnd"
+            android:textColor="#FF6E40"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvFragFullDescription"
+            app:layout_constraintEnd_toEndOf="@+id/tvFragFullDescription"
+            app:layout_constraintStart_toStartOf="@+id/tvFragFullDescription"
+            app:layout_constraintTop_toTopOf="@+id/tvFragFullDescription"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/tvAboutTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:elevation="5dp"
+            android:fontFamily="@font/roboto_black"
+            android:text="@string/about_info"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvFragDate" />
+
+        <TextView
+            android:id="@+id/tvFragFullDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/curved_corner_square"
+            android:backgroundTint="@color/white"
+            android:elevation="2dp"
+            android:fontFamily="@font/roboto_condensed_bold_italic"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="50dp"
+            android:text="@string/full_desc_info"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvAboutTitle" />
+
+        <Button
+            android:id="@+id/btnShowMap"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="1dp"
+            android:backgroundTint="@color/white"
+            android:elevation="3dp"
+            android:fontFamily="@font/roboto_condensed_bold_italic"
+            android:hapticFeedbackEnabled="true"
+            android:padding="50dp"
+            android:text="@string/show_n_on_map"
+            android:textColor="#FF6E40"
+            app:cornerRadius="0dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvFragFullDescription" />
+
+        <Button
+            android:id="@+id/btnApplyEvent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/white"
+            android:elevation="3dp"
+            android:fontFamily="@font/roboto_condensed_bold_italic"
+            android:hapticFeedbackEnabled="true"
+            android:padding="50dp"
+            android:text="@string/apply_for_n_event"
+            android:textColor="#FF6E40"
+            app:cornerRadius="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/tvFragFullDescription" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

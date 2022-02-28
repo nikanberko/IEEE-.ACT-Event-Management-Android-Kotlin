@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.DotAct" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/orangeDotAct</item>
+        <item name="colorSecondaryVariant">@color/orangeDotAct</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/black</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="EditTextTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">@color/normalEditText</item>
+        <item name="colorControlActivated">@color/orangeDotAct</item>
+        <item name="colorControlHighlight">@color/orangeDotAct</item>
+    </style>
+
+    <style name="ThemeOverlay.DotAct.FullscreenContainer" parent="">
+        <item name="fullscreenBackgroundColor">@color/light_blue_600</item>
+        <item name="fullscreenTextColor">@color/light_blue_A200</item>
+    </style>
+</resources>

@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/AdminConstraintViewCreate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="portrait"
+    tools:context=".AdminActivity">
+
+
+    <TextView
+        android:id="@+id/tvAboutTitleCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/roboto_black"
+        android:text="@string/about"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/etFullDescCreate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etLocationNameCreate" />
+
+    <TextView
+        android:id="@+id/etEventTitleCreate"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+
+        android:autofillHints=""
+        android:fontFamily="@font/roboto_condensed_bold_italic"
+        android:hint="@string/event_title"
+        android:inputType="text"
+        android:soundEffectsEnabled="true"
+        android:textAlignment="center"
+        android:textColor="#FF6E40"
+        android:textColorHighlight="#FF6E40"
+        android:textColorHint="@color/orangeDotAct"
+        android:textColorLink="#FF6E40"
+        android:textSize="26sp"
+        android:theme="@style/EditTextTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivTitleImageCreate" />
+
+    <TextView
+        android:id="@+id/etTimeCreate"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:background="@drawable/square_corner_orange"
+        android:editable="false"
+        android:elevation="6dp"
+        android:fontFamily="@font/roboto_light"
+        android:padding="10dp"
+        android:soundEffectsEnabled="true"
+        android:text="@string/time"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHighlight="#FF6E40"
+        android:textColorHint="@color/white"
+        android:textColorLink="#FF6E40"
+        android:textSize="18sp"
+        android:theme="@style/EditTextTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbMembersOnlyCreate" />
+
+    <TextView
+        android:id="@+id/etApplicationFormLinkCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="@font/roboto_light"
+        android:hint="@string/application_form_link"
+        android:inputType="text"
+        android:soundEffectsEnabled="true"
+        android:textAlignment="center"
+        android:textColor="#FF6E40"
+        android:textColorHighlight="#FF6E40"
+        android:textColorHint="@color/normalEditText"
+        android:textColorLink="#FF6E40"
+        android:theme="@style/EditTextTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTitleDescCreate" />
+
+    <TextView
+        android:id="@+id/etLocationNameCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:autofillHints=""
+        android:background="@drawable/square_corner"
+        android:editable="true"
+        android:fontFamily="@font/roboto_light"
+        android:hint="@string/location_name"
+        android:inputType="text"
+        android:padding="10dp"
+        android:soundEffectsEnabled="true"
+        android:textAlignment="center"
+        android:textColor="#FF6E40"
+        android:textColorHighlight="#FF6E40"
+        android:textColorHint="@color/normalEditText"
+        android:textColorLink="#FF6E40"
+        android:theme="@style/EditTextTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTimeCreate" />
+
+    <TextView
+        android:id="@+id/etTitleDescCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="@font/roboto_light"
+        android:hint="@string/short_description"
+        android:inputType="textMultiLine"
+        android:maxLines="2"
+        android:soundEffectsEnabled="true"
+        android:textAlignment="center"
+        android:textColor="#FF6E40"
+        android:textColorHighlight="#FF6E40"
+        android:textColorHint="@color/normalEditText"
+        android:textColorLink="#FF6E40"
+        android:theme="@style/EditTextTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etFullDescCreate" />
+
+    <TextView
+        android:id="@+id/etFullDescCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:autofillHints=""
+        android:fontFamily="@font/roboto_light"
+        android:hint="@string/full_description"
+        android:soundEffectsEnabled="true"
+        android:textAlignment="center"
+        android:textColor="#FF6E40"
+        android:textColorHighlight="#FF6E40"
+        android:textColorHint="@color/normalEditText"
+        android:textColorLink="#FF6E40"
+        android:theme="@style/EditTextTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAboutTitleCreate" />
+
+    <TextView
+        android:id="@+id/btnDateCreate"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:background="@drawable/square_corner_orange"
+        android:editable="false"
+        android:elevation="6dp"
+        android:fontFamily="@font/roboto_light"
+        android:inputType="datetime"
+        android:padding="10dp"
+        android:shadowRadius="50"
+        android:soundEffectsEnabled="true"
+        android:text="@string/date"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FF6E40"
+        android:textColorHint="@color/white"
+        android:textColorLink="#FF6E40"
+        android:textSize="18sp"
+        android:theme="@style/EditTextTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbMembersOnlyCreate" />
+
+    <ImageView
+        android:id="@+id/ivTitleImageCreate"
+        android:layout_width="match_parent"
+        android:layout_height="197dp"
+        android:background="@drawable/fg_event_photo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/no_title_image"
+        tools:srcCompat="@mipmap/no_title_image"
+        android:contentDescription="@string/todo" />
+
+    <CheckBox
+        android:id="@+id/cbMembersOnlyCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:buttonTint="#FF6E40"
+        android:checked="false"
+        android:text="@string/members_only"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEventTitleCreate" />
+
+    <TextView
+        android:id="@+id/etLatitudeCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/place_holder_coord2"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.731"
+        app:layout_constraintStart_toEndOf="@+id/cbMembersOnlyCreate"
+        app:layout_constraintTop_toBottomOf="@+id/etEventTitleCreate" />
+
+    <TextView
+        android:id="@+id/etLongitudeCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/placeHolderCoord1"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.769"
+        app:layout_constraintStart_toEndOf="@+id/cbMembersOnlyCreate"
+        app:layout_constraintTop_toBottomOf="@+id/etEventTitleCreate" />
+
+    <TextView
+        android:id="@+id/btnUploadEvent"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="676dp"
+        android:background="@drawable/ic_baseline_check_circle_24"
+        android:backgroundTint="@color/orangeDotAct"
+        android:elevation="6dp"
+        android:fontFamily="@font/roboto_condensed_bold_italic"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/randomStringImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="@font/roboto_light"
+        android:hint="@string/application_form_link"
+        android:inputType="text"
+        android:soundEffectsEnabled="true"
+        android:textAlignment="center"
+        android:textColor="#FF6E40"
+        android:textColorHighlight="#FF6E40"
+        android:textColorHint="@color/normalEditText"
+        android:textColorLink="#FF6E40"
+        android:theme="@style/EditTextTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etApplicationFormLinkCreate" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager2UploadEvent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="9dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+    </androidx.viewpager2.widget.ViewPager2>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">DotAct</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="logoText">.Act</string>
+    <string name="emailRegistrationLogin">Email</string>
+    <string name="passwordRegistrationLogin">Password</string>
+    <string name="create_account">Create Account</string>
+    <string name="log_in">Log in</string>
+    <string name="app_notice_text">*Notice: this is not an official IEEE application. It is used to help members of student branches easily register and find local IEEE organised events.</string>
+    <string name="registered_company_text">.Act® 2021</string>
+    <string name="account_troubleshooting_text">Trouble with your account?</string>
+    <string name="moto_text">It\'s Time To Act</string>
+    <string name="title_activity_register_web">RegisterWeb</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="title_activity_choose_location">Map</string>
+    <string name="drag_marker_to_set_location">Drag marker to set location</string>
+    <string name="about">About</string>
+    <string name="placeHolderCoord1">xfgdfg</string>
+    <string name="event_title">Event title</string>
+    <string name="place_holder_coord2">hjkhjk</string>
+    <string name="members_only">Members only</string>
+    <string name="time">Time</string>
+
+    <string name="todo_placeholder">TODO</string>
+    <string name="date">Date</string>
+    <string name="short_description">Short description</string>
+    <string name="full_description">Full description</string>
+    <string name="location_name">Location name</string>
+    <string name="application_form_link">Application form link</string>
+    <string name="act">.Act</string>
+    <string name="placeholder_title_event1">IEEE SB Osijek team building</string>
+    <string name="placeholder_desc">A small paintball teambuilding event for active members</string>
+    <string name="placeholderDate">29.6.2021.</string>
+    <string name="todo">TODO</string>
+    <string name="dateInfo">28.9.2020</string>
+    <string name="todoInfo">TODO</string>
+    <string name="apply_for_n_event">Apply for\n event</string>
+    <string name="organizer">IEEE SB Osijek</string>
+    <string name="titleInfo">PYTHON WORKSHOP</string>
+    <string name="members_only_info">Only For Members</string>
+    <string name="time_info">19:00 h</string>
+    <string name="location_info">FERIT T2-31</string>
+    <string name="read_more_info">Read more</string>
+    <string name="about_info">About</string>
+    <string name="full_desc_info">Nakon vrlo dugih godinu dana ponovno ćemo imati priliku vidjeti se uživo na IEEE Tech Workshop Python Crash Course-u. Svi koji su zainteresirani naučiti osnove ovog iznimno moćnog i traženog programskog jezika imaju priliku to učiniti 12.5.2021. uživo na FERIT-u u Trpimirovoj T2-14.</string>
+    <string name="show_n_on_map">Show\n on map</string>
+    <string name="map_create_btn">Map</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="skip_tutorial">Skip tutorial</string>
+    <string name="intro_sub_header">Welcome to .Act! We will now give you\n a little tour. Are you ready?</string>
+    <string name="greeting">Hello</string>
+    <string name="swipe_right_first">Swipe right</string>
+    <string name="let_s_go">Let\'s go!</string>
+    <string name="big_questionmark">\?</string>
+    <string name="so_what_s_in_it_for_you">So, what\'s in it for you?</string>
+</resources>
