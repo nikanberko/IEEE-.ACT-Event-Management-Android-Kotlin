@@ -1,5 +1,5 @@
-#Croatian:
-##Ravoj mobilne Android aplikacije za prikaz i prijenos informacija o aktivnostima, kongresima i konferencijama
+Croatian:
+Ravoj mobilne Android aplikacije za prikaz i prijenos informacija o aktivnostima, kongresima i konferencijama
 organiziranim u sklopu IEEE studentskog ogranka Osijek. Aplikacija omogućuje korisnicima jednostavan pristup
 informacijama o svim događajima unutar ogranka, informacije o lokaciji, učlanjenje u udrugu i stvaranje vlastitog profila,
 dok administratorima omogućuje prijenos događaja zajedno s prethodno spomenutim funkcijama.
